@@ -1,3 +1,5 @@
+// I'm keeping this around mostly just as a reminder and backup of how to mess with MutationObservers. I've since reimplemented this for use with the Stylish extension (available for chrome and firefox!). See README.md.
+
 var config = {childList: true, subtree: true, attributes: false, characterData: false}
 var observer = new MutationObserver(function(mutations) {
   mutations.forEach(function(mutation) {
